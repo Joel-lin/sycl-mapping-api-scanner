@@ -1,5 +1,21 @@
 #!/root/miniconda3/envs/idp/bin/python
 
+"""
+A utility to help scan the sources of CUDA-SYCL migration projects and to provide a summary report listing unsupported APIs based on the support status of SYCL mapping/migration APIs tracked by Intel SYCLomatic open source project. The database of CUDA migration APIs status is stored under https://github.com/oneapi-src/SYCLomatic/tree/SYCLomatic/docs/dev_guide/api-mapping-status
+
+Github repository:https://github.com/Joel-lin/sycl-mapping-api-scanner
+
+usage: sycl-mapping-APIs-scanner.py -p <cudaprojectfolder>
+
+"""
+__author__    = "Joel Lin"
+__copyright__ = "Copyright 2023, The sycl-mapping-APIs-scanner Project in github"
+
+__license__   = "BSD 2-Clause Simplified License"
+__version__   = "0.3"
+__email__     = "joel.lin@intel.com"
+__status__    = "Development"
+
 import os
 import csv
 import sys
