@@ -22,4 +22,4 @@ Example usages:
 # example output
 
 
-![./example_output.png]([http://url/to/img.png](https://github.com/Joel-lin/sycl-mapping-api-scanner/blob/60746b6315d50c3ba915edadb4d85343e9ae2fc4/example_output.png?raw=true)https://github.com/Joel-lin/sycl-mapping-api-scanner/blob/60746b6315d50c3ba915edadb4d85343e9ae2fc4/example_output.png?raw=true)
+![./example_output.png](https://github.com/Joel-lin/sycl-mapping-api-scanner/blob/main/example_output.png?raw=true)
