@@ -21,32 +21,5 @@ Example usages:
 
 # example output
 
-(base) root@root123:/home/root123# python sycl-mapping-APIs-scanner.py -p ./FBGEMM-main
-root123_FBGEMM-main
-report.csv should be generated.
-folder name                                              root123_FBGEMM-main
-occurence of total unsupported APIs                      43
--------------------------------------------------------------------------------
-nvmlInit                                                 1
-nvmlDeviceGetCount                                       1
-nvmlDeviceGetHandleByIndex                               2
-nvmlDeviceGetPciInfo                                     1
-nvmlDeviceGetNvLinkState                                 1
-nvmlDeviceGetNvLinkRemotePciInfo                         1
-cudaDeviceGetByPCIBusId                                  1
-cudaProfilerStart                                        5
-cudaProfilerStop                                         5
-__float2bfloat16_rn                                      3
-asm                                                      16
-asm volatile                                             6
--------------------------------------------------------------------------------
-12 unique unsupported APIs(or ASMs) are likely being used in the project
 
---------------------------------------------------------------------------------------
-You can use the following commands to find where are these unsupported APIs in codes lines numbers
-
-    windows: findstr /S /N <APIs name> <projectfolderpath>\*.cu
-    Linux: grep -rn <APIs name> <projectfolderpath>/*.cu
-
-report_ASM.csv should be generated. use "--printcsv report_ASM.csv" to list unsupported PTXs if there is
-(base) root@root123:/home/root123# dist/sycl-mapping-APIs-scanner-linux --printcsv report_ASM.csv
+![./example_output.png]([http://url/to/img.png](https://github.com/Joel-lin/sycl-mapping-api-scanner/blob/60746b6315d50c3ba915edadb4d85343e9ae2fc4/example_output.png?raw=true)https://github.com/Joel-lin/sycl-mapping-api-scanner/blob/60746b6315d50c3ba915edadb4d85343e9ae2fc4/example_output.png?raw=true)
