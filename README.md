@@ -15,9 +15,9 @@ Brief:
 
 Example usages:
 
-    1. sycl_mapping_APIs_scanner -p <cudaproject_folderpath>
+    1.python sycl_mapping_APIs_scanner.py -p <cudaproject_folderpath>
 
-    2. sycl_mapping_APIs_scanner --printcsv <examplereport.csv>
+    2.python sycl_mapping_APIs_scanner.py --printcsv <examplereport.csv>
 
 # example output
 
