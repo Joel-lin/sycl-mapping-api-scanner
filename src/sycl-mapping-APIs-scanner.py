@@ -21,7 +21,7 @@ import csv
 import sys
 import re
 #import regex as re
-import myarrays_20230926
+import myarrays_20240715
 #from joblib import Parallel, delayed
 #from multiprocessing import Manager
 
@@ -211,7 +211,7 @@ def print_howtofindstr():
     print("--------------------------------------------------------------------------------------")
     print("You can use the following commands to find where are these unsupported APIs in codes lines numbers")
     print("")
-    print("    windows: findstr /S /N <APIs name> <projectfolderpath>\*.cu")
+    print("    windows: findstr /S /N <APIs name> <projectfolderpath>*.cu")
     print("    Linux: grep -rn <APIs name> <projectfolderpath>/*.cu")
     print("")
 
@@ -244,20 +244,20 @@ if __name__ == '__main__':
     
         element_strings = []  # List of element strings from myarrays2 module
         #ASM_element_strings = [] # list of ASM_API_migration_status arrary
-        module_vars = vars(myarrays_20230926)
+        module_vars = vars(myarrays_20240715)
     
         for var_name, var_value in module_vars.items():
             if isinstance(var_value, list) and var_name != "ASM_API_migration_status":
                 element_strings.extend(var_value)
                 #print(var_name)
-        #for mystr in myarrays_20230926.ASM_API_migration_status:
+        #for mystr in myarrays_20240715.ASM_API_migration_status:
         #    print(mystr)
         
         generate_csv_report(folder_paths, element_strings, brkflag)
         print("report.csv should be generated.")
         print_report("report.csv")
         
-        generate_ASM_csv_report(folder_paths, myarrays_20230926.ASM_API_migration_status, brkflag)
+        generate_ASM_csv_report(folder_paths, myarrays_20240715.ASM_API_migration_status, brkflag)
         print("report_ASM.csv should be generated. use \"--printcsv report_ASM.csv\" to list unsupported PTXs if there is")
         
         
