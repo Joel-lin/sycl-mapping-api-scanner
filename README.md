@@ -6,7 +6,7 @@ A utility to help scan the sources of CUDA-SYCL migration projects and to provid
 > python sycl-mapping-APIs-scanner.py
 
 Brief:
-  This utility mainly scans the preset filetypes(.cu, .cuh, .c, .h, .cpp, .hpp, .py and etc..) to find unsupported APIs listed by SYCLomatic project. Reference link(2023-10-12):https://oneapi-src.github.io/SYCLomatic/dev_guide/api-mapping-status.html
+  This utility mainly scans the preset filetypes(.cu, .cuh, .c, .h, .cpp, .hpp, .py and etc..) to find unsupported APIs listed by SYCLomatic project. Reference link(2024-07-15):https://oneapi-src.github.io/SYCLomatic/dev_guide/api-mapping-status.html
 
   Please specify the folder path using the -p parameter.
 
